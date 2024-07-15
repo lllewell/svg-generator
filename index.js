@@ -18,8 +18,15 @@ const templateSVG = (response) => {
   <text x="70" y="80" font-size="50" text-anchor="middle" fill="${response.textColor}">${response.text}</text>
   
 </svg>`
-        
-}
+        } else if (response.shape === 'triangle') {
+            return `<svg height="220" width="500" xmlns="http://www.w3.org/2000/svg">
+
+  <polygon points="100,10 150,190 50,190" fill="${response.bgColor}" />
+
+  <text x="150" y="125" font-size="60" text-anchor="middle" fill="${response.textColor}">${response.text}</text>
+
+</svg>`
+        }
 }
 
 inquirer
