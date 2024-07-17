@@ -11,7 +11,7 @@ const templateSVG = (response) => {
         
         </svg>`
         } else if (response.shape === 'square') {
-            return `<svg width="300" height="130" xmlns="http://www.w3.org/2000/svg">
+            return `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
 
   <rect width="115" height="100" x="10" y="10" rx="20" ry="20" fill="${response.bgColor}" />
 
@@ -56,7 +56,7 @@ inquirer
     .then((response) => {
         const result = templateSVG(response);
         fs.writeFileSync('logo.svg', result,
-            console.log(`Logo generated!`)
+            console.log(`Generated logo.svg!`)
         );
     })
 
