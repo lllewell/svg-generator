@@ -32,7 +32,7 @@ inquirer
     .prompt([
         {
             type: "input",
-            message: "Which 3 letters do you want in your logo?",
+            message: "Which 3 letters do you want in your logo? (text can be no longer than 3 letters)",
             name: "text",
             validate(value){
                 return value.length <= 3;
