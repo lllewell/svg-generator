@@ -1,0 +1,7 @@
+<svg height="220" width="500" xmlns="http://www.w3.org/2000/svg">
+
+  <polygon points="250,60 100,400 400,400" fill="purple" />
+
+  <text x="250" y="175" font-size="37" text-anchor="middle" fill="white">LML</text>
+
+</svg>

@@ -21,9 +21,9 @@ const templateSVG = (response) => {
         } else if (response.shape === 'triangle') {
             return `<svg height="220" width="500" xmlns="http://www.w3.org/2000/svg">
 
-  <polygon points="100,10 150,190 50,190" fill="${response.bgColor}" />
+  <polygon points="250,60 100,400 400,400" fill="${response.bgColor}" />
 
-  <text x="150" y="125" font-size="60" text-anchor="middle" fill="${response.textColor}">${response.text}</text>
+  <text x="250" y="175" font-size="37" text-anchor="middle" fill="${response.textColor}">${response.text}</text>
 
 </svg>`
         }
@@ -55,6 +55,8 @@ inquirer
     ])
     .then((response) => {
         const result = templateSVG(response);
-        fs.writeFileSync('logo.svg', result);
+        fs.writeFileSync('logo.svg', result,
+            console.log(`Logo generated!`)
+        );
     })
 
