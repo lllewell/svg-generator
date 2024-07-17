@@ -19,11 +19,11 @@ const templateSVG = (response) => {
   
 </svg>`
         } else if (response.shape === 'triangle') {
-            return `<svg height="220" width="500" xmlns="http://www.w3.org/2000/svg">
+            return `<svg height="200" width="300" xmlns="http://www.w3.org/2000/svg">
 
-  <polygon points="250,60 100,400 400,400" fill="${response.bgColor}" />
+  <polygon points="0,100 200,100 100,0 0,100" fill="${response.bgColor}" />
 
-  <text x="250" y="175" font-size="37" text-anchor="middle" fill="${response.textColor}">${response.text}</text>
+  <text x="100" y="80" font-size="50" text-anchor="middle" fill="${response.textColor}">${response.text}</text>
 
 </svg>`
 }}
@@ -34,6 +34,9 @@ inquirer
             type: "input",
             message: "Which 3 letters do you want in your logo?",
             name: "text",
+            validate(value){
+                return value.length <= 3;
+            }
         },
         {
             type: "input",
