@@ -26,8 +26,7 @@ const templateSVG = (response) => {
   <text x="250" y="175" font-size="37" text-anchor="middle" fill="${response.textColor}">${response.text}</text>
 
 </svg>`
-        }
-}
+}}
 
 inquirer
     .prompt([
