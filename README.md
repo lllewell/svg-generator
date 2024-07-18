@@ -1,4 +1,4 @@
-# <SVG Generator>
+# SVG Generator
 
 ## Description
 
@@ -17,3 +17,6 @@ Upon running the program using the command `node.index.js` the user will be pres
 ![svg-generated](images/svg-generated.png)
 
 ## Links
+[gitHub-repo](https://github.com/lllewell/svg-generator)
+
+[walkthrough-video](https://drive.google.com/file/d/1bqJchSwuwWiRkMd7PX5vwDsHT6-yJLuM/view?usp=sharing)
